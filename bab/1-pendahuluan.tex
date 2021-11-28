@@ -3,45 +3,47 @@
 
 % Ubah bagian-bagian berikut dengan isi dari pendahuluan
 
-Penelitian ini dilatarbelakangi oleh \lipsum[1][1-5]
+Dalam bab ini akan dibahas latar belakang, permasalahan, tujuan, serta batasan masalah pada penelitian ini.
 
 \section{Latar Belakang}
 \label{sec:latarbelakang}
 
-Pesatnya perkembangan roket yang merupakan \lipsum[1]
-
-\lipsum[2]
+Keselamatan dan Kesehatan Kerja atau biasa disingkat K3 menjadi usaha untuk meningkatkan kualitas lingkungan kerja agar menjadi lebih aman dan sehat bagi segala pihak yang ada di lingkungan tersebut. Aman dan sehat bisa dalam artian bebas dari kecelakaan, kebakaran, ledakan, lingkungan tercemar, atau wabah penyakit. Tentu saja hal - hal tersebut perlu dihindari karena dapat memberikan dampak kerugian material dan bahkan melayangnya nyawa manusia. Aturan K3 sendiri diatur dalam bentuk norma oleh regulasi pemerintah Republik Indonesia lewat UUD 1945 pasal 27 ayat 2 tentang filosofi penghidupan yang layak, UU No 1 tahun 1970 tentang keselamatan kerja, Undang-Undang No. 13 Tahun 2003 pasal 86 dan 87 Kewajiban penerapan Sistem Manajemen Keselamatan dan Kesehatan Kerja (SMK3), Peraturan Pemerintah No.50 Tahun 2012 tentang Sistem Manajemen Keselamatan dan Kesehatan Kerja (SMK3), dan peraturan pelaksanaan lainnya dari Permenaker, Instruksi Menteri, Pekmenaker.  [1]
+Medan dari proyek konstruksi dapat dianggap sebagai lingkungan yang penuh dengan resiko menjadikannya suatu hal yang patut dipertimbangkan. Bukan hal yang jarang dimana para personel lapangan yang bekerja di suatu proyek konstruksi mengalami cedera akibat hal - hal tertentu. Mulai dari debu konstruksi, puing - puing berterbangan, jatuh dari ketinggian, atau tertimpa benda. Cedera kepala oleh jatuh ketinggian atau tertimpa benda dapat berakibat fatal pada nyawa personil lapangan.[2]
+Helm keselamatan kerja atau Hardhat dalam Bahasa inggris atau juga kadang disebut Helm proyek merupakan salah satu bentuk APD K3 yang berfungsi untuk melindungi kepala pengguna dari benturan. Bentuk benturan contohnya kejatuhan benda tajam atau berat yang sekiranya jika tidak menggunakan pelindung akan berdampak fatal pada kepala personil proyek. Selain benturan, helm juga digunakan untuk melindungi kepala penggunanya dari percikan api dan berbagai bentuk serpihan terbang yang biasa ada di lokasi kerja.[3]
+Adanya aturan penggunaan helm di suatu proyek konstruksi dengan dasar K3 belum tentu menjamin penggunaan efektif dari helm proyek tersebut. Berdasarkan catatan administrasi keselamatan kerja di Amerika, 78 kecelakaan konstruksi 53 kejadian melibatkan pekerja konstruksi tidak mengenakan helm proyek dengan tepat. Dari sini dapat ditarik suatu kesimpulan bahwa kelalaian pekerja lapangan untuk menggunakan helm proyek atau helm keselamatan kerja masih ada.
+Pengawasan terhadap penerapan Keselamatan Kesehatan Kerja pada suatu proyek seperti menggunakan helm Hard Hat secara konvensional sudah sering dilakukan. Personil pengawas yang dikerahkan untuk memastikan para pekerja di suatu proyek mematuhi aturan keselamatan kerja. Misalnya pengawas ditugaskan untuk mengingatkan pekerja proyek yang tidak menggunakan helm proyek dengan tepat atau bahkan tidak digunakan sama sekali.[2]
 
 \section{Permasalahan}
 \label{sec:permasalahan}
 
-Dari permasalahan tersebut maka \lipsum[1][1-6]
+Disebutkan pada latar belakang bahwa pengawasan konvensional menggunakan personel manusia untuk menjadi pengawas akan penggunaan helm proyek sebagai APD Keselamatan dan Kesehatan Kerja. Tetapi, teruntuk lokasi proyek konstruksi yang luas dan dengan jumlah pekerja proyek yang banyak menjadikan pengawasan hal yang sulit untuk dilakukan oleh pengawas atau supervisor manusia. Maka dari itu ditarik permasalahan yaitu perlu adanya metode efektif untuk melakukan pengawasan terhadap penggunaan helm proyek secara otomatis. 
 
 \section{Tujuan}
 \label{sec:Tujuan}
 
-Tujuan dari \lipsum[1][1-3] adalah:
+Dari permasalahan yang disebutkan, dapat dapat ditentukan tujuan :
 
 \begin{enumerate}[nolistsep]
 
-  \item Membuat \lipsum[2][1-3]
-
-  \item \lipsum[3][1-3]
+  \item Merancang sistem yang dapat mendeteksi pekerja proyek yang menggunakan helm proyek dan yang tidak menggunakan helm proyek secara otomatis
+  \item Memicu alarm jika terdeteksi adanya personnel yang tidak menggunakan helm keselamatan kerja dengan benar.
 
 \end{enumerate}
 
 \section{Batasan Masalah}
 \label{sec:batasanmasalah}
 
-Batasan-batasan dari \lipsum[1][1-3] adalah:
+Batasan-batasan dari pengembangan Deteksi Helm Keselmatan Kerja menggunakan CNN meliputi hal - hal berikut:
 
 \begin{enumerate}[nolistsep]
 
-  \item Mempermudah \lipsum[2][1-3]
+  \item Diasumsikan sistem pengawasan diletakkan pada \emph{checkpoint} masuk kawasan konstruksi
 
-  \item \lipsum[3][1-5]
+  \item Metode deteksi penggunaan helm keselematan kerja yang akan digunakan pada penelitian ini adalah \emph{You Only Look Once} (YOLO) versi 5 atau YOLOv5.
 
-  \item \lipsum[4][1-5]
+  \item Jenis input yang akan digunakan untuk deteksi adalah input dari kamera yang diletakkan pada checkpoint masuk kawasan konstruksi.
+  \item Sistem hanya mendeteksi "kepala menggunakan helm" dan "kepala yang tidak mengenakan helm".
 
 \end{enumerate}
 
@@ -49,18 +51,19 @@ Batasan-batasan dari \lipsum[1][1-3] adalah:
 \label{sec:sistematikapenulisan}
 
 Laporan penelitian tugas akhir ini terbagi menjadi \lipsum[1][1-3] yaitu:
+Untuk laporan penelititan pada tugas akhir ini akan disusun dalam beberapa poin yaitu :
 
 \begin{enumerate}[nolistsep]
 
   \item \textbf{BAB I Pendahuluan}
 
-  Bab ini berisi \lipsum[2][1-5]
+  Bab ini berisi penjelasan terkait latar belakang, permasalahan, tujuan, batasan masalah, dan sistematika dari penulisan laporan ini.
 
   \vspace{2ex}
 
   \item \textbf{BAB II Tinjauan Pustaka}
 
-  Bab ini berisi \lipsum[3][1-5]
+  Bab kedua ini menguraikan teori - teori yang menjadi fundamental dari permaslaah yang dibahas.
 
   \vspace{2ex}
 
