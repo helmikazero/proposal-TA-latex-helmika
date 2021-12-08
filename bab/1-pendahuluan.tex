@@ -1,11 +1,11 @@
-\chapter{PENDAHULUAN}
+\section{PENDAHULUAN}
 \label{chap:pendahuluan}
 
 % Ubah bagian-bagian berikut dengan isi dari pendahuluan
 
 Dalam bab ini akan dibahas latar belakang, permasalahan, tujuan, serta batasan masalah pada penelitian ini.
 
-\section{Latar Belakang}
+\subsection{Latar Belakang}
 \label{sec:latarbelakang}
 
 Keselamatan dan Kesehatan Kerja atau biasa disingkat K3 menjadi usaha untuk meningkatkan kualitas lingkungan kerja agar menjadi lebih aman dan sehat bagi segala pihak yang ada di lingkungan tersebut. Aman dan sehat bisa dalam artian bebas dari kecelakaan, kebakaran, ledakan, lingkungan tercemar, atau wabah penyakit. Tentu saja hal - hal tersebut perlu dihindari karena dapat memberikan dampak kerugian material dan bahkan melayangnya nyawa manusia. Aturan K3 sendiri diatur dalam bentuk norma oleh regulasi pemerintah Republik Indonesia lewat UUD 1945 pasal 27 ayat 2 tentang filosofi penghidupan yang layak, UU No 1 tahun 1970 tentang keselamatan kerja, Undang-Undang No. 13 Tahun 2003 pasal 86 dan 87 Kewajiban penerapan Sistem Manajemen Keselamatan dan Kesehatan Kerja (SMK3), Peraturan Pemerintah No.50 Tahun 2012 tentang Sistem Manajemen Keselamatan dan Kesehatan Kerja (SMK3), dan peraturan pelaksanaan lainnya dari Permenaker, Instruksi Menteri, Pekmenaker.  \cite{ahlik3umum-k3indonesia_2021}
@@ -14,12 +14,12 @@ Helm keselamatan kerja atau Hardhat dalam Bahasa inggris atau juga kadang disebu
 Adanya aturan penggunaan helm di suatu proyek konstruksi dengan dasar K3 belum tentu menjamin penggunaan efektif dari helm proyek tersebut. Berdasarkan catatan administrasi keselamatan kerja di Amerika, 78 kecelakaan konstruksi 53 kejadian melibatkan pekerja konstruksi tidak mengenakan helm proyek dengan tepat. Dari sini dapat ditarik suatu kesimpulan bahwa kelalaian pekerja lapangan untuk menggunakan helm proyek atau helm keselamatan kerja masih ada.
 Pengawasan terhadap penerapan Keselamatan Kesehatan Kerja pada suatu proyek seperti menggunakan helm Hard Hat secara konvensional sudah sering dilakukan. Personil pengawas yang dikerahkan untuk memastikan para pekerja di suatu proyek mematuhi aturan keselamatan kerja. Misalnya pengawas ditugaskan untuk mengingatkan pekerja proyek yang tidak menggunakan helm proyek dengan tepat atau bahkan tidak digunakan sama sekali.\cite{li2020deep}
 
-\section{Permasalahan}
+\subsection{Permasalahan}
 \label{sec:permasalahan}
 
 Disebutkan pada latar belakang bahwa pengawasan konvensional menggunakan personel manusia untuk menjadi pengawas akan penggunaan helm proyek sebagai APD Keselamatan dan Kesehatan Kerja. Tetapi, teruntuk lokasi proyek konstruksi yang luas dan dengan jumlah pekerja proyek yang banyak menjadikan pengawasan hal yang sulit untuk dilakukan oleh pengawas atau supervisor manusia. Maka dari itu ditarik permasalahan yaitu perlu adanya metode efektif untuk melakukan pengawasan terhadap penggunaan helm proyek secara otomatis. 
 
-\section{Tujuan}
+\subsection{Tujuan}
 \label{sec:Tujuan}
 
 Dari permasalahan yang disebutkan, dapat dapat ditentukan tujuan :
@@ -31,7 +31,7 @@ Dari permasalahan yang disebutkan, dapat dapat ditentukan tujuan :
 
 \end{enumerate}
 
-\section{Batasan Masalah}
+\subsection{Batasan Masalah}
 \label{sec:batasanmasalah}
 
 Batasan-batasan dari pengembangan Deteksi Helm Keselmatan Kerja menggunakan CNN meliputi hal - hal berikut:
@@ -47,7 +47,7 @@ Batasan-batasan dari pengembangan Deteksi Helm Keselmatan Kerja menggunakan CNN 
 
 \end{enumerate}
 
-\section{Penelitian Terkait}
+\subsection{Penelitian Terkait}
 \begin{enumerate}
   \item Deep Learning Based Safety Helmet Detection in Engineering Management Based on Convolutional Neural Networks 
   \par Li dan teman teman pada tahun 2020 melakukan penelitian tentang metode deteksi helm keselamatan kerja secara real time berbasis deep learning pada lokasi konstruksi. Li dan teman – teman menggunakan SSD-MobileNet yang berbasis dari CNN. Menggunakan dataset yang berjumlah 3261 gambar helm keselamatan. SSD- Mobilenet dipilih dibanding R-CNN dengan maksud pendeteksian yang lebih cepat dan cocok untuk real – time walau tidak seakurat R-CNN. \cite{li2020deep}
@@ -56,7 +56,7 @@ Batasan-batasan dari pengembangan Deteksi Helm Keselmatan Kerja menggunakan CNN 
   \par Yusuf Umar pada tahun 2020 melakukan penelitian tentang deteksi penggunaan helm pada pengendara bermotor. Pada penelitiannya menggunakan YOLOv3 yang berbasis dari CNN. Pada sistem yang dikembangkan dapat memberikan bounding box ke pengendara lalu dalam bounding box pengendara terdapat boundbox lain dari kepala hingga dada pengendara untuk mendeteksi penggunaan helm motor ada atau tidak. \cite{hanafi2020deteksi}
 \end{enumerate}
 
-\section{Gap Penelitian}
+\subsection{Gap Penelitian}
 Pada penelitian Deep Learning-Based Safety Helmet Detection in Engineering Management Based on Convolutional Neural Networks oleh Li dan kawan - kawan , pendeteksian hanya mendeteksi helm keselamatannya sendiri tetapi belum mendeteksi personel yang tidak menggunakan helm keselamatan. Selain itu, Li dan kawan - kawan tidak menggunakan YOLO dalam penelitiannya dan memilih menggunakan SSD-MobileNet.
 \par Pada penelitian Deteksi Penggunaan Helm Pada Pengendara Bermotor Berbasis Deep Learning oleh Yusuf Umar hanya diimplementasikan pada deteksi helm pada pengendara bermotor dan belum untuk helm proyek. Sekiranya metode yang akan digunakan untuk pengembangan sama tetapi dataset yang digunakan akan berbeda.
 
